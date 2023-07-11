@@ -5,6 +5,7 @@ import LearnGrid from './components/LearnGrid';
 import LayoutDefault from './components/layout';
 import {BrowserRouter, NavLink, Link, Routes, Route} from 'react-router-dom'
 import Layout404 from './components/layout/layout404/Layout404';
+import Bookroom from './components/pages/Bookroom';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LayoutDefault />} >
             <Route path="/" element={<LearnGrid />}/>
-           
+            <Route path="/book-room" element={<Bookroom />}></Route>
             <Route path="*" element={<Layout404 />} />
           </Route>
           
